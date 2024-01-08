@@ -1,5 +1,6 @@
-import doubleTick from "../assets/images/double-tick.png";
+import doubleTickImage from "../assets/images/double-tick.png";
 import noteImage from "../assets/images/notes.png";
+import plusImage from "../assets/images/plus.png";
 
 export const Header = () => {
     return (
@@ -19,7 +20,7 @@ export const Header = () => {
                 />
                 <button
                     type="submit"
-                    className="appearance-none w-8 h-8 bg-[url('./images/plus.png')] bg-no-repeat bg-contain"
+                    className={`appearance-none w-8 h-8 bg-[url('${plusImage}')] bg-no-repeat bg-contain`}
                 ></button>
             </form>
 
@@ -27,7 +28,7 @@ export const Header = () => {
                 <li className="flex space-x-1 cursor-pointer">
                     <img
                         className="w-4 h-4"
-                        src={doubleTick}
+                        src={doubleTickImage}
                         alt="Complete"
                     />
                     <span>Complete All Tasks</span>

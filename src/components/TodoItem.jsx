@@ -1,3 +1,5 @@
+import cancelImage from "../assets/images/cancel.png";
+
 export const TodoItem = () => {
     return (
         <div
@@ -35,7 +37,7 @@ export const TodoItem = () => {
             ></div>
 
             <img
-                src="./images/cancel.png"
+                src={cancelImage}
                 className="flex-shrink-0 w-4 h-4 ml-2 cursor-pointer"
                 alt="Cancel"
             />
