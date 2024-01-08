@@ -1,3 +1,6 @@
+import doubleTick from "../assets/images/double-tick.png";
+import noteImage from "../assets/images/notes.png";
+
 export const Header = () => {
     return (
         <div>
@@ -5,7 +8,7 @@ export const Header = () => {
                 className="flex items-center bg-gray-100 px-4 py-4 rounded-md"
             >
                 <img
-                    src="./images/notes.png"
+                    src={noteImage}
                     className="w-6 h-6"
                     alt="Add todo"
                 />
@@ -24,7 +27,7 @@ export const Header = () => {
                 <li className="flex space-x-1 cursor-pointer">
                     <img
                         className="w-4 h-4"
-                        src="./images/double-tick.png"
+                        src={doubleTick}
                         alt="Complete"
                     />
                     <span>Complete All Tasks</span>
